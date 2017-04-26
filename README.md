@@ -1,2 +1,4 @@
-# s.h.e.
-Smart Home for Everyone
+# S.H.E.
+Smart Home for Everyone!
+
+A Smart Home solution build around the popular Raspberry Pi and Raspberry Pi Zero.
