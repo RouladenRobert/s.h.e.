@@ -12,5 +12,5 @@ Coming soon.
 - Calendar and Task integration
 - News from popular newspapers and online websites
 - Weather information from your location
-- Reply and write messages from popular messangers
+- Reply and write messages from popular messengers
 - Control your Smart Home devices
