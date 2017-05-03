@@ -44,6 +44,20 @@
                         </div>
                         <div class="next" id="next1"><i class="fa fa-caret-right" style="font-size: 150px; color: #4FC3F7"></i></div>
                     </div>
+
+                    <div class="setup setup_slide setup_welcome">
+                        <div class="prev" id="prev1"><i class="fa fa-caret-left" style="font-size: 150px; color: #4FC3F7"></i></div>
+                        <div class="setup setup_slide_inner">
+                            <h3>NETWORK CONFIG</h3>
+                            <div class="setup setup_content">
+                                <p>
+                                    Choose a name for your SHE Base Station. This name will be used to access our intuitve web interface.
+                                    This name can be changed later if needed.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="next" id="next1"><i class="fa fa-caret-right" style="font-size: 150px; color: #4FC3F7"></i></div>
+                    </div>
                 </div>
             </div>
         </div>
