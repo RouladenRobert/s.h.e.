@@ -1,1 +1,200 @@
+/*********/
+/* BASIC */
+/*********/
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
+
+/*********/
+/* SETUP */
+/*********/
+
+.setup_outer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.setup_step {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #4FC3F7;
+}
+
+.setup_headline {
+    width: 100%;
+    height: 100px;
+    float: left;
+    border-bottom: 4px solid #4FC3F7;
+    background-color: #F3F3F3;
+    position: relative;
+}
+
+.setup_img {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    margin: 0 50px 0 0;
+    background-image: url("../img/SHE_Logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.setup_headline h2 {
+    margin: 0;
+    line-height: 100px;
+    padding: 0 0 0 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    width: 50%;
+    position: relative;
+}
+
+.setup_wrapper {
+    width: 100%;
+    height: calc(100% - 100px);
+    float: left;
+    overflow: hidden;
+}
+
+.setup_slider {
+    height: 100%;
+    width: 300%;
+}
+
+.setup_slide {
+    height: 100%;
+    width: 33.33333%;
+    float: left;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.setup_slide_inner {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    box-shadow: 4px 4px 5px 0px rgba(156,156,156,1);
+    width: 50%;
+    background-color: #EEEEEE;
+}
+
+.setup_slide h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    padding: 0 0 0 50px;
+    color: #4FC3F7;
+}
+
+.setup_slide p {
+    padding: 0 0 0 50px;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.setup_content {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.setup_steps {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 50px;
+    max-width: 90%;
+    height: auto;
+}
+
+.setup_steps li {
+    height: auto;
+    float: left;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.setup_steps_element {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.circle {
+    background-color: #4FC3F7;
+    border-radius: 50%;
+}
+
+.line {
+    position: relative;
+}
+
+.line_inner {
+    width: 60%;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.setup_text_input {
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    margin: 0 0 20px 50px;
+}
+
+#server_dns {
+    font-family: 'Lato', sans-serif;
+    color: #4FC3F7;
+    text-transform: lowercase;
+}
+
+.setup_dns {
+    color: #4FC3F7;
+    font-size: 30px;
+}
+
+.false {
+    outline-color: red;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+.true {
+    outline-color: green;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+.next {
+    height: 150px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    transition: 400ms;
+}
