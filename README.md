@@ -1,4 +1,7 @@
 # S.H.E.
+
+<img src="https://github.com/Techassi/s.h.e./blob/master/src/server/img/SHE_Logo.png" alt="SHE Logo" width="200px" height="whatever">
+
 Smart Home for Everyone!
 
 A Smart Home solution build around the popular Raspberry Pi and Raspberry Pi Zero.
