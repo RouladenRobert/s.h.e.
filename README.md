@@ -18,6 +18,6 @@ Coming soon.
 - Reply and write messages from popular messengers
 - Control your Smart Home devices
 
-<img src="https://github.com/Techassi/s.h.e./blob/master/src/server/img/Logo_transparent_Schrift.png" alt="SHE Media Group Logo" width="50px">
+<img src="https://github.com/Techassi/s.h.e./blob/master/src/server/img/Logo_transparent_Schrift.png" alt="SHE Media Group Logo" width="100px">
 
 S.H.E Media Group
