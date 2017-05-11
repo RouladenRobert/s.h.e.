@@ -1,0 +1,128 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu May 11 17:49:59 2017
+
+@author: jonas
+"""
+
+#db
+dic = {"Weather_Module" : ['Wetter',
+                              'sonnig',
+                              'Regen',
+                              'Schnee'],
+                              
+          "News_Module" : ['Nachrichten',
+                          'heute',
+                          'gestern',
+                          'wichtigsten',
+                          'wichtig',
+                          'News'
+                          ],
+                          
+          "Calendar_Module" : ['Termin',
+                              'von',
+                              'heute',
+                              'morgen',
+                              'übermorgen',
+                              'Terminkalender',
+                              'Kalender'],
+                               
+          "Passive_Verbs_Module" : ['öffne',
+                                    'zeige',
+                                    'sage',
+                                    'lese',
+                                    'lies',
+                                    'wird'
+                                    ],
+                                    
+          "Active_Verbs_Module" : ['speicher',
+                                   'speichere',
+                                   'setze',
+                                   'stelle ein',
+                                   'schreibe'
+                                   ],
+          "Quest_Module" : ["Wie"
+                            ]
+                              
+         }
+
+st = input("Eingabe: ")
+
+def analyzeString(string):
+    
+    #Idee: Werte erzeugen, die zählen, wie oft Wort im String vorkommen. Überschreitet dieser 0, kommt Wort vor.
+    #Durch Kombination der Counter in if-Abfragen kann somit auf Sinn des Satzes geschlossen werden.
+    if string == []:
+        return
+    
+    we_ct = 0
+    ne_ct = 0
+    ca_ct = 0
+    pv_ct = 0
+    av_ct = 0
+    qu_ct = 0
+    ct_arr = [we_ct, ne_ct, ca_ct, pv_ct, av_ct, qu_ct] 
+    
+    n_st = string.split(" ")
+    
+    #word counting
+    for i in n_st:
+        if i in dic["Weather_Module"]:
+            we_ct += 1
+            continue
+        elif i in dic["News_Module"]:
+            ne_ct += 1
+            continue
+        elif i in dic["Calendar_Module"]:
+            ca_ct += 1
+            continue
+        elif i in dic["Passive_Verbs_Module"]:
+            pv_ct += 1
+            continue
+        elif i in dic["Active_Verbs_Module"]:
+            av_ct += 1
+            continue
+        elif i in dic["Quest_Module"]:
+            qu_ct += 1
+            continue
+    
+    print(pv_ct)
+    
+    #combine values
+    if(we_ct > 0) and (pv_ct > 0) and (sumofarrIndexes(ct_arr, [1,2,4,5]) == 0):
+        print("Ha GAAAAAAAAY")
+        return
+    else:
+        print("Error_01")
+        return
+        
+    if(ne_ct > 0) and (pv_ct > 0) and (sumofarrIndexes(ct_arr, [0,2,4,5]) == 0):
+        print("Gay die zweite")
+        return
+    else:
+        print("Error_02")
+        return
+    #elif....
+    #else:
+    #Das wird dann hier so fortgeführt bis wir alle Fälle abgedeckt haben
+    
+    
+    
+def sumofarrIndexes(arr, i):
+    
+    #Damit ich oben die Stellen im ct_arr rausnehme, die ich überprüfe und somit nicht mitzähle, zähle ich hier 
+    #alle Werte zusammen, die ich nicht oben in den if-Abfragen überprüfe. Sind die 0 (bzw. bauen wir hier vlt ne Toleranz ein)
+    #kann man den Sinn des Satzes ja erschließen und dementsprechend Aktionen auslösen.
+    
+    s = 0
+    
+    for h in arr:
+        s += arr[h]
+            
+    for j in i:
+        s = s - arr[j]
+    
+    print(s)        
+    return s
+
+analyzeString(st)
